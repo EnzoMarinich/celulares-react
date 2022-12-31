@@ -1,0 +1,39 @@
+.itemCount{
+    display: flex;
+    margin-top: 3rem;
+    height: 30px;
+}
+
+.restar{
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+
+.sumar{
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+
+.num{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 40%;
+    text-align: center;
+    font-weight: 700;
+}
+
+.añadirCarrito{
+    color: white;
+    width: 100px;
+    height: 35px;
+    margin-top: 25px;
+    margin-left: 60px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0, 220, 0);
+    cursor: pointer;
+}

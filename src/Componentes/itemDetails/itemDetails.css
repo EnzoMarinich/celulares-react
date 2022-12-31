@@ -1,18 +1,33 @@
-.container{
-    height: 100vh;
+.detail__container{
+    width: 700px;
     margin-top: 30px;
     justify-content: center;
     display: flex;
 }
 
 .container__img{
-    left: 10px;
     width: 65%;
     max-width: 500px;
+    min-width: 400px;
     height: 30rem;
 }
 
 .container__caracteristicas{
     margin-top: 50px;
     text-align: start;
+}
+
+.container__caracteristicas h1{
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 580px ) {
+    .detail__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container__img{
+        height: 27rem;
+    }
 }

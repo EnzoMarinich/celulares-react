@@ -3,5 +3,6 @@
     flex-wrap: wrap;
     gap: 1.5em;
     justify-content: center;
-    margin-top: 3em;
+    padding-top: 3em;
+    background-color: #E5E5E5
 }
