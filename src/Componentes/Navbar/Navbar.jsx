@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom"
 import { useCartContext } from "../../context/Cartcontext"
 
+const categorias =[
+    {categoriId:"android", name:"Android"},
+    {categoriId:"apple", name:"Apple"}
+] 
+
 const Navbar = ()=>{
     const {cantidadTotal}=useCartContext()
 
@@ -10,8 +15,7 @@ const Navbar = ()=>{
                 <img className="nav__bar__img" src="/logo.png" alt="logo" />
                 <ul className="nav__bar__ul">
                     <li className="nav__bar__ul__li"><Link to="/">Home</Link></li>
-                    <li className="nav__bar__ul__li"><Link to="/category/android">Android</Link></li>
-                    <li className="nav__bar__ul__li"><Link to="/category/apple">Apple</Link></li>
+                    {categorias.map((prod)=><li key={prod.categoriId} className="nav__bar__ul__li"><Link to={`category/${prod.categoriId}`}>{prod.name}</Link></li>)}
                 </ul>
             </nav>
             <Link to="./cart" className="nav__cart">

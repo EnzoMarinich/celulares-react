@@ -38,8 +38,8 @@ const CartContainer = ()=>{
         const db = getFirestore()
         const queryCollection = collection(db, "orders")
 
-        if( dataForm.name == "" || dataForm.email == "" || dataForm.phone == "" ){
-            alert("necesitas completar los datos para realizar la orden")
+        if( dataForm.name == "" || dataForm.email.length < 6 || dataForm.phone < 6 ){
+            alert("necesitas completar correctamente los datos para realizar la orden")
         } else{
         addDoc(queryCollection, order)
         .then(resp=>console.log(resp))
@@ -62,9 +62,7 @@ const CartContainer = ()=>{
     }
 
     const confirmar = ()=>{
-
-        alert(`Has confirmado tu orden! Estaremos comunicandonos a tu email para que puedas tener un seguimiento de tu compra, gracias!`)
-                
+        alert(`Has confirmado tu orden! Estaremos comunicandonos a tu email para que puedas tener un seguimiento de tu compra, gracias!`)                
     }
     
     
