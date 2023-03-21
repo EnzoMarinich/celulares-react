@@ -27,14 +27,14 @@ const ItemDetails =({celular})=>{
                     <h1>{celular.name}</h1>
                     <h3>Memoria: {celular.memoria}</h3>
                     <h3>Color: {celular.color}</h3>
-                    <h3>Precio: {celular.price}</h3>
+                    <h3>Precio: ${celular.price}</h3>
                     {selec?
                     <>
-                    <Link to={"../../cart"}>
+                    <Link className="link" to={"../../cart"}>
                     <button>ver carrito</button>
                     </Link>
-                    <Link to={"../../"}>
-                    <button>seguir viendo</button>
+                    <Link className="link" to={"../../"}>
+                    <button>ir a la tienda</button>
                     </Link>
                     </>                    
                     :

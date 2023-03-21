@@ -18,6 +18,8 @@ const ItemListContainer = ()=>{
         const queryCollections = collection(db, "productos")
         const queryFilter = category? query(queryCollections, where("sistem", "==", category)) : queryCollections
 
+
+
         setLoading(true)
         getDocs(queryFilter)
         .then(resp=>setProds(resp.docs.map(prod => ({id: prod.id, ...prod.data()}))))

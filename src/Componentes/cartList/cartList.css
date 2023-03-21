@@ -1,0 +1,31 @@
+.cartDetail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    font-size: 13px;
+}
+
+.caracteristicas{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.eliminar{
+    font-size: 12px;
+    height: 27px;
+    width: 120px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.eliminar:hover{
+    transition: all .3s;
+    opacity: .7;
+}

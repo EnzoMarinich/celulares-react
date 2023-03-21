@@ -13,6 +13,7 @@ import "./Componentes/itemDetails/itemDetails.css"
 import "./Componentes/itemDetailsContainer/itemDetailsContainer.css"
 import "./Componentes/itemCount/itemCount.css"
 import "./Componentes/cartContainer/cartContainer.css"
+import "./Componentes/cartList/cartList.css"
 
 function App() {
   

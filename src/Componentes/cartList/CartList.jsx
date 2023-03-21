@@ -11,9 +11,14 @@ const CartList = ()=>{
                 <div>
                     <img className="cartDetailImg" src={prod.post} alt="" />
                 </div>
-                Nombre: {prod.name} - Memoria: {prod.memoria} - Color: {prod.color} <br></br>
-                Precio por unidad: ${prod.price} -  Cantidad seleccionada: {prod.cantidad} -  Subtotal: ${subTotal}
-                <button onClick={()=>eliminarProd(prod) }  style={{height:"40px"}}>eliminar producto</button>
+                <div className="caracteristicas">
+                    <h1>{prod.name}</h1>
+                    <p>memoria: {prod.memoria} - color: {prod.color}</p>
+                    <p>cantidad seleccionada: {prod.cantidad}</p>
+                    <h3>${prod.price} x unidad</h3>
+                    <p>Subtotal: ${prod.price*prod.cantidad}</p>
+                </div>
+                <button className="eliminar" onClick={()=>eliminarProd(prod) }  style={{height:"40px"}}>eliminar producto</button>
             </div>
         )
 )
